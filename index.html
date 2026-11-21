@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarDEX - Car Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">Car<span>DEX</span></h1>
+
+      <div class="nav-buttons">
+        <button id="allButton" class="nav-button active">All Cars</button>
+        <button id="favoritesButton" class="nav-button">
+          &#9829; Favorites (<span id="favoriteCount">0</span>)
+        </button>
+      </div>
+    </nav>
+    <main class="container">
+      <section class="intro">
+        <span class="hero-badge"> Browse Cars by Brand and Year </span>
+        <h2 id="pageTitle">WELLCOME TO CARDEX BY MAHEECSE</h2>
+        <p>
+          Pick a brand and a year, search by name and save the cars you love.
+        </p>
+      </section>
+      <section class="controls">
+        <select id="brandSelect"></select>
+        <select id="yearSelect"></select>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search cars by name..."
+        />
+      </section>
+      <p id="resultCount" class="result-count"></p>
+      <p id="loadingMessage" class="message hidden">Loading cars...</p>
+      <p id="errorMessage" class="message error hidden"></p>
+      <p id="emptyMessage" class="message hidden">No cars found.</p>
+      <div id="carGrid" class="car-grid"></div>
+    </main>
+    <footer class="footer">
+      <p>CarDEX - Data from NHTSA vPIC API (vpic.nhtsa.dot.gov)</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
