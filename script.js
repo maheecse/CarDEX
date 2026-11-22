@@ -284,7 +284,7 @@ function changeView(favoritesOnly) {
     loadingMessage.classList.add("hidden");
     errorMessage.classList.add("hidden");
   } else {
-    pageTitle.textContent = "Browse Cars by Brand and Year";
+    pageTitle.textContent = "WELCOME TO CARDEX BY MAHEECSE";
     allButton.classList.add("active");
     favoritesButton.classList.remove("active");
   }
